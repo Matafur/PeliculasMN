@@ -1,0 +1,49 @@
+
+<div>
+    <div id="backdrop_path">
+      <h1 id="title_movie">{{this.detallMovi.title}}</h1>
+      <img id="backdrop__image" src= "https://image.tmdb.org/t/p/original/{{this.detallMovi.backdrop_path}}?{{API_KEY}}" >
+    </div>
+
+    <div id="card" >
+      
+      <div id="poster_path">
+         <img id="poster_image" src= "https://image.tmdb.org/t/p/original/{{this.detallMovi.poster_path}}?{{API_KEY}}" >
+      </div>
+      <div id="Overview" class="text">
+
+        <h1>Overview</h1>
+        <br>
+        <p>{{this.detallMovi.overview}}</p>
+      </div>    
+    </div>    
+
+
+
+    <div class="text" id="information_movie">
+      <div class="card_content">
+        <p>Language</p>
+        <h2>{{this.detallMovi.original_language}}</h2>
+        <p>Genders</p>
+
+        <div *ngFor="let x of this.genres">
+              <p>{{x.name}}</p>
+        </div>
+        <p>Budget</p>
+        <h2>{{this.detallMovi.budget}}</h2>
+
+        <p>Vote Average</p>
+        <h2>{{this.detallMovi.vote_average}}</h2>
+        <p>Relase Date</p>
+        <p>{{this.detallMovi.release_date}}</p>
+      </div>
+    </div>
+          
+    
+</div>
+<br>
+<app-cast></app-cast>
+<!--
+<button>Devolver
+    <a [routerLink]="[/index]"></a> 
+</button>-->

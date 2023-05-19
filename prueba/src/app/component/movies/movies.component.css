@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    
+    
+}
+
+main{
+    display: grid;
+    margin:0 auto;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    gap: 1px;
+    
+}
+
+.image-container{
+    display: flex;
+}
+
+.image-container img{
+    width: 60%;
+}
+
+.text h2, p{
+    display: flex;
+    margin:0 auto;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+.botton{
+    display: flex;
+    margin:0 auto;
+    border-radius: 40%;
+    height: 10%;
+    width: 6%;
+    padding: 10px;
+    text-align: center;
+
+    
+    
+}
+

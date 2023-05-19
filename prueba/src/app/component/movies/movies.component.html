@@ -1,0 +1,26 @@
+
+<app-home></app-home>
+<main>
+  <div  *ngFor="let character of cartelera" >
+    <div class="card" >
+      <div class="image-container">
+        <a [routerLink]="[character.id]">
+          <img id="image" src= "https://image.tmdb.org/t/p/original/{{character.poster_path}}?{{API_KEY}}" >  
+        </a>          
+      </div>
+      <div class="text">
+        <h2>{{character.title}}</h2>
+        <p>{{character.release_date}}</p>
+      </div>
+    </div>
+  </div>
+  
+</main>
+<button class="botton" (click)="NextPage()">Siguiente </button>
+
+
+
+
+<!-- <button id="botton" (click)="PreviousPage()">Mostrar Anterior pagina</button> -->
+
+

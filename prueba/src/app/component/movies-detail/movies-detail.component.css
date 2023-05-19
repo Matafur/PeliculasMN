@@ -1,0 +1,72 @@
+
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+
+#title_movie{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#backdrop_path{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#backdrop__image{
+    width: 100%;
+    height: auto;
+    min-height: 1%;
+    max-height: 1%;
+    opacity: 0.1;
+    
+}
+
+
+#poster_path{
+    display: flex;
+    width: 20%;
+}
+#poster_image{
+    width: 100%;
+}
+
+
+#card{
+    display: flex;
+    gap: 20px;
+       
+}
+
+#Overview{
+    padding: 5%;
+    width: 70%;
+}
+
+
+
+.card_content h2,p,div{
+    display: inline-block;
+    margin: 20px;
+}
+
+.text h2, p, h1{
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+

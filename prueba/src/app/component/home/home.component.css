@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(8, 8, 8);
+}
+
+#prueba{
+    background-color: black;
+    background-image: url("../../../assets/Images/Bosque.jpg");
+     
+    
+}
+
+#title{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    padding: 10%;
+    
+}

@@ -1,0 +1,13 @@
+<div class="card" *ngFor="let cast of detailCast2" >
+    <div class="prueba">
+        <div class="image-container">
+            <img id="image" src= "https://image.tmdb.org/t/p/original/{{cast.profile_path}}?api_key=f269218f9ac41fda847402ed563424ef" >          
+        </div>
+        <div class="text">
+            <p>{{cast.character}}</p>
+            <p>{{cast.name}}</p>
+        </div>
+    </div>
+
+</div>
+
